@@ -1,7 +1,8 @@
 ## FP Exercises
 
 ## Scope and Closure
-1. ```javascript
+1.
+```javascript
   const stuff = ['backpack', 'water bottle'];
   const getOtherStuff = () => {
     console.log(stuff); // what is printed to the console?
@@ -9,7 +10,8 @@
   };
 ```
 
-2. ```javascript
+2.
+```javascript
   const numberTransform = (x, y) => {
     const add(a, b) {
       return a + b;
@@ -25,26 +27,30 @@
 ### Pure functions
 For each of the following functions decide whether they are pure functions or not and explain why briefly.
 
-3. ```javascript
+1.
+```javascript
   function(x, y) {
     console.log(x + y);
     return x + y;
   }
 ```
 
-1. ```javascript
+2.
+```javascript
   function(x, y) {
     return x + y;
   }
 ```
 
-2. ```javascript
+3.
+```javascript
   function(x, y) {
     return x + y + Math.random();
   }
 ```
 
-4. ```javascript
+4.
+```javascript
   function(x, y) {
     const rand = Math.random();
 
