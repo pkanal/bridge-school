@@ -1,5 +1,27 @@
 ## FP Exercises
 
+## Scope and Closure
+1. ```javascript
+  const stuff = ['backpack', 'water bottle'];
+  const getOtherStuff = () => {
+    console.log(stuff); // what is printed to the console?
+    return [...stuff, 'books'];
+  };
+```
+
+2. ```javascript
+  const numberTransform = (x, y) => {
+    const add(a, b) {
+      return a + b;
+    }
+
+    return add(x, y) * 10;
+  };
+
+  add(1, 2) // what is the result?
+  numberTransform(1, 2) // what is the result?
+```
+
 ### Pure functions
 For each of the following functions decide whether they are pure functions or not and explain why briefly.
 
